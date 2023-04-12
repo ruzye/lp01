@@ -215,7 +215,7 @@ header h1{
 }
 .main2-img{
     max-width: 110px;
-    height: fit-content;
+    height: auto;
 }
 .main2-start{
     font-size:85%;
