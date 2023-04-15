@@ -215,7 +215,7 @@ header h1{
 }
 .main2-img{
     max-width: 110px;
-    height: auto;
+    height: fit-content;
 }
 .main2-start{
     font-size:85%;
@@ -406,6 +406,7 @@ header h1{
     }
     .main3-text {
         width: 100%;
+        overflow: hidden;
         background-image:url(../img/catch.jpg);
         background-color:rgba(255,255,255,0.6);
         background-blend-mode:lighten;
@@ -436,7 +437,6 @@ header h1{
         margin: 20px auto 0;
     }
     .main3{
-	width: 100%;
         flex-wrap: wrap;
     }
     .main3-img{
@@ -735,11 +735,23 @@ height: 100%;
 }
 .js-fade{
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateX(60px);
     transition: opacity .8s, transform .8s;
 }
 .js-fade.is-inview {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     transition-delay: .4s;
+}
+@media screen and (max-width: 480px){
+    .js-fade{
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity .8s, transform .8s;
+    }
+    .js-fade.is-inview {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: .4s;
+    }
 }
