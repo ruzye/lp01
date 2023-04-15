@@ -436,6 +436,7 @@ header h1{
         margin: 20px auto 0;
     }
     .main3{
+	width: 100%;
         flex-wrap: wrap;
     }
     .main3-img{
