@@ -735,11 +735,11 @@ height: 100%;
 }
 .js-fade{
     opacity: 0;
-    transform: translateX(60px);
+    transform: translateY(60px);
     transition: opacity .8s, transform .8s;
 }
 .js-fade.is-inview {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
     transition-delay: .4s;
 }
