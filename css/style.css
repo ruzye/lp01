@@ -10,6 +10,7 @@ body{
 	-webkit-font-smoothing: subpixel-antialiased;
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    overflow-x: hidden;
 }
 html,body{
     font-family:  'Kiwi Maru', 'Noto Sans JP','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
@@ -346,6 +347,7 @@ header h1{
 .main3{
     display: flex;
     background:#CCBE9A;
+    overflow: hidden;
 }
 .main3 h2{
     font-size:1.6rem;
